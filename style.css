@@ -1,0 +1,635 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --green: green;
+    --light-red: #E57373;
+    --blue: #051824;
+    --purple: #7774FF;
+    --light-green: #68DE97;
+    --grey: grey;
+}
+
+* {
+    font-family: sans-serif !important;
+}
+
+.video {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 7px;
+    z-index: 1;
+}
+
+.logo > img {
+    width: 215px;
+}
+
+.logo_ai {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 15px;
+}
+
+.logo_ai > img {
+    width: 80px;
+}
+
+.brain {
+    width: 130px;
+}
+
+.modal-content {
+    border-bottom: none;
+}
+
+.modal .modal-footer {
+    text-align: center;
+    height: auto;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.modal .modal-content {
+    padding: 10px 24px 10px 24px;
+}
+
+.modal_header {
+    text-transform: unset;
+    text-align: center;
+    color: var(--black);
+    padding: 10px 0;
+}
+
+.modal_text {
+    color: var(--black);
+    text-align: center;
+}
+
+.mdi-plus {
+    color: var(--black) !important;
+    font-size: 25px !important;
+}
+
+.btn-floating.btn-small {
+    background-color: var(--light-red);
+    transform: rotate(45deg);
+    position: absolute;
+    right: -15px;
+    top: -17px;;
+    z-index: 9999;
+}
+
+.mdi-chevron-down {
+    color: var(--black) !important;
+    font-size: 25px !important;
+}
+
+.modal {
+    top: 40% !important;
+    overflow-y: unset !important;
+}
+
+#loading_modal > .modal {
+    top: 55% !important;
+}
+
+.mdi_icon {
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    background: var(--purple);
+    color: var(--white);
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+}
+
+.pause_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+}
+
+.small_loading {
+    width: 12px;
+    height: 12px;
+    background: var(--light-red);
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9999;
+    left: 26vw;
+    top: 6px;
+}
+
+.video_time {
+    color: var(--white);
+    font-size: 13px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 0 15px;
+}
+
+#video_modal > .modal {
+    top: 12% !important;
+    position: absolute;
+    padding: 10px;
+    border: 1px solid var(--black);
+}
+
+.ui-modal .btn {
+    margin: 0 10px 0 0;
+}
+
+.collection.transparent .collection-item, .collection.subpages .collection-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection-item .title {
+    color: var(--black);
+}
+
+#static_video > .modal {
+    top: 20% !important;
+    position: absolute;
+    color: var(--black);
+    padding: 20px;
+    border: 1px solid var(--black);
+}
+
+.moder {
+    color: var(--light-red);
+    text-align: center;
+    font-size: 17px;
+}
+
+.modal .modal-footer .btn {
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 7px;
+    font-weight: 600;
+}
+
+#category_modal > .modal {
+    top: 52% !important;
+}
+
+.btn {
+    text-transform: unset;
+}
+
+#category_btn {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+#category_btn > .category {
+    margin: 0 0 0 0 !important;
+    background: var(--purple) !important;
+}
+
+#category_btn > .btns {
+    margin: 0 0 0 0 !important;
+    background: #D9D9D9 !important;
+    color: var(--white);
+}
+
+
+#category_btn > .btns:hover {
+    background: #B54BDC !important;
+}
+
+.category_btn_ok {
+    width: 100%;
+    background: #D9D9D9;
+    color: var(--white);
+    margin-top: 10px !important;
+}
+
+.category_btn_ok:hover {
+    background: #D9D9D9;
+}
+
+.delete_btn {
+    text-align: center;
+    padding: 10px;
+}
+
+.btns_ok {
+    width: 100%;
+    margin-top: 10px !important;
+}
+
+.delete_btn > a {
+    color: var(--light-red);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.access_camera {
+    text-align: center;
+    padding: 20px;
+}
+
+.access_camera > a {
+    color: var(--light-red);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.replay_icon {
+    position: fixed;
+    z-index: 9999;
+}
+
+.replay_icon > i {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: rotate(270deg);
+    font-size: 76px;
+    right: 50%;
+    color: var(--white);
+}
+
+#rate_modal > .modal {
+    top: 52% !important;
+}
+
+.rate_btns {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+.like_btn {
+    width: 45px;
+    height: 45px;
+    background: var(--light-green);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 47px;
+    color: var(--white);
+}
+
+.seen_btn {
+    width: 45px;
+    height: 45px;
+    background: #FFCF47;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 47px;
+    color: var(--white);
+}
+
+.dislike_btn {
+    width: 45px;
+    height: 45px;
+    background: var(--light-red);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 47px;
+    color: var(--white);
+}
+
+.like_btn > i, .seen_btn > i, .dislike_btn > i {
+    font-size: 20px;
+}
+
+.rate_btn {
+    color: #818181;
+    font-size: 13px;
+}
+
+.started_btn {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.access_text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    bottom: 7%;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.access_btns {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 15vw;
+    bottom: 17%;
+}
+
+.faq_btns {
+    position: absolute;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 4vw;
+    bottom: 17%;
+}
+
+.social {
+    position: absolute;
+    bottom: 16%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.chat_text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    border: 10px solid var(--black);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mdi-camera, .mdi-comment-question, .mdi-share-variant, .mdi-send {
+    font-size: 35px;
+    color: var(--black);
+}
+
+.close_btn {
+    transform: rotate(45deg);
+}
+
+.close {
+    background: var(--grey);
+    border-radius: 50px;
+    height: 26px;
+    width: 38px;
+}
+
+.btn_close {
+    color: var(--white) !important;
+    font-size: 24px !important;
+}
+
+.chat_input {
+    border: 1px solid var(--black) !important;
+    padding: 0 15px !important;
+}
+
+.appear_words {
+    background: var(--black);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.appear_words > a {
+    color: var(--white);
+}
+
+.chat {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.chat_btn {
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 16px;
+    background: var(--black);
+    border-radius: 10px;
+    left: 15px;
+}
+
+.chat_btn > a {
+    color: var(--white);
+}
+
+.triagle {
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 41px solid var(--white);
+    position: absolute;
+    transform: rotate(-29deg);
+    bottom: -25px;
+    right: 0;
+}
+
+.video_play {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.other_btn {
+    background: var(--light-red);
+    width: 100%;
+    padding-bottom: 44px;
+    padding-top: 4px;
+}
+
+.send_btn {
+    background: var(--light-green);
+    width: 100%;
+    padding-bottom: 44px;
+    padding-top: 4px;
+}
+
+.section {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.dislike_side {
+    width: 100%;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    z-index: 9999;
+    opacity: 0.5;
+}
+
+.like_side {
+    width: 100%;
+    height: 100vh;
+    background: var(--green);
+    position: absolute;
+    z-index: 9999;
+    opacity: 0.5;
+}
+
+.small_loading_swipe {
+    bottom: 28px;
+    left: 20vw;
+    background: var(--white);
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.video_text {
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    bottom: 20px;
+    color: var(--white);
+}
+
+.swipe_img {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.tabs-swipable .tabs-content {
+    height: 100vh !important;
+}
+
+.emoji_part {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 50px;
+}
+
+.swipes_icon {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    top: 35%;
+}
+
+.sad_icon, .happy_icon {
+    position: absolute;
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: var(--white);
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: var(--blue);
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+
+.swipe_left_icon {
+    position: absolute;
+    z-index: 10000;
+    bottom: 23%;
+    left: 5%;
+    width: 130px;
+}
+
+.swipe_right_icon {
+    position: absolute;
+    z-index: 10000;
+    bottom: 23%;
+    right: 5%;
+    width: 130px;
+}
+
+.swipe_video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mdi-arrow-left {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.swipe_emoji_side {
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 10px;
+}
+
+.swipe_icon {
+    font-size: 30px;
+}
+
+.swipe_progress {
+    position: absolute;
+    z-index: 9999;
+    bottom: 18px;
+    background: white !important;
+    width: 85vw;
+}
+
+.swipe_emoji_part {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+}
+
+.swipe_determinate {
+    width: 20%;
+    background: var(--white) !important;
+}
+
+.swipe_work {
+    position: absolute;
+    z-index: 9999;
+    bottom: 18px;
+    background: var(--white) !important;
+    width: 20vw
+}
+
+.swipe_work_video {
+    object-fit: cover;
+    width: 22vw;
+    height: 90vh;
+    position: absolute;
+    border-radius: 30px
+}
+
+@media only screen and (max-width: 992px) {
+    .modal {
+        width: 60%;
+        border-radius: unset;
+    }
+}
